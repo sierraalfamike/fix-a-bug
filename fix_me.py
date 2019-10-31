@@ -6,7 +6,7 @@ class ParentB(object):
     DATA = [4, 5, 6]
 
 
-class Transformer(ParentA, ParentB):
+class Transformer(ParentB, ParentA):
 
     def get_previous(self, current_index):
         '''
