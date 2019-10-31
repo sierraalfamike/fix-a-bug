@@ -13,6 +13,8 @@ class Transformer(ParentB, ParentA):
         Return the previous value in self.DATA. If there is no previous value,
         return 0.
         '''
+        if current_index == 0:
+            return 0
         return self.DATA[current_index - 1]
 
     def transform(self):
