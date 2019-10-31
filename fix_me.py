@@ -25,7 +25,7 @@ class Transformer(ParentA, ParentB):
         '''
         transformed_data = []
 
-        for value, index in enumerate(self.DATA):
+        for index, value in enumerate(self.DATA):
             transformed_value = sum(self.get_previous(index), value)
             transformed_data.append(transformed_value)
 
